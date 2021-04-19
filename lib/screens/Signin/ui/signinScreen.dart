@@ -250,7 +250,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: GoogleFonts.ptSerif(
                             fontStyle: FontStyle.normal, fontSize: 30),
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(height: 30),
                       Form(
                         key: formkey,
                         child: Column(
@@ -263,15 +263,15 @@ class _LoginScreenState extends State<LoginScreen> {
                                     },
                                     controller: usernameController,
                                     decoration: InputDecoration(
-                                      // border: OutlineInputBorder(
-                                      //     gapPadding: 0,
-                                      //     borderRadius: const BorderRadius.all(
-                                      //         Radius.circular(40.0)),
-                                      //     borderSide: BorderSide(width: 2)),
-                                      // floatingLabelBehavior:
-                                      //     FloatingLabelBehavior.always,
-                                      // labelText: "Username",
-                                      hintText: "Username",
+                                      border: OutlineInputBorder(
+                                          gapPadding: 0,
+                                          borderRadius: const BorderRadius.all(
+                                              Radius.circular(40.0)),
+                                          borderSide: BorderSide(width: 2)),
+                                      floatingLabelBehavior:
+                                          FloatingLabelBehavior.always,
+                                      labelText: "Username",
+                                      hintText: " Enter your username",
                                     ),
                                     validator: (val) {
                                       return val.isEmpty || val.length < 3
@@ -293,15 +293,15 @@ class _LoginScreenState extends State<LoginScreen> {
                               controller: emailController,
                               keyboardType: TextInputType.emailAddress,
                               decoration: InputDecoration(
-                                // border: OutlineInputBorder(
-                                //     gapPadding: 0,
-                                //     borderRadius: const BorderRadius.all(
-                                //         Radius.circular(40.0)),
-                                //     borderSide: BorderSide(width: 2)),
-                                // floatingLabelBehavior:
-                                //     FloatingLabelBehavior.always,
-                                // labelText: "Email",
-                                hintText: "Email",
+                                border: OutlineInputBorder(
+                                    gapPadding: 0,
+                                    borderRadius: const BorderRadius.all(
+                                        Radius.circular(40.0)),
+                                    borderSide: BorderSide(width: 2)),
+                                floatingLabelBehavior:
+                                    FloatingLabelBehavior.always,
+                                labelText: "Email",
+                                hintText: "Enter your email",
                               ),
                               validator: (val) {
                                 return RegExp(
@@ -323,15 +323,15 @@ class _LoginScreenState extends State<LoginScreen> {
                               keyboardAppearance: Brightness.dark,
                               obscureText: true,
                               decoration: InputDecoration(
-                                // border: OutlineInputBorder(
-                                //     gapPadding: 0,
-                                //     borderRadius: const BorderRadius.all(
-                                //         Radius.circular(40.0)),
-                                //     borderSide: BorderSide(width: 2)),
-                                // floatingLabelBehavior:
-                                //     FloatingLabelBehavior.always,
-                                // labelText: "Password",
-                                hintText: "Password",
+                                border: OutlineInputBorder(
+                                    gapPadding: 0,
+                                    borderRadius: const BorderRadius.all(
+                                        Radius.circular(40.0)),
+                                    borderSide: BorderSide(width: 2)),
+                                floatingLabelBehavior:
+                                    FloatingLabelBehavior.always,
+                                labelText: "Password",
+                                hintText: "Enter your password",
                               ),
                               validator: (val) {
                                 return val.length < 6
@@ -358,11 +358,11 @@ class _LoginScreenState extends State<LoginScreen> {
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(40),
-                                color: Colors.orange[700],
+                                color: Constants.kCColorDarkBLue,
                                 boxShadow: [
                                   //background color of box
                                   BoxShadow(
-                                    color: Colors.orange[700].withOpacity(.4),
+                                    color: Constants.kCLightBlue,
                                     blurRadius: 5.0, // soften the shadow
                                     spreadRadius: .5, //extend the shadow
                                     offset: Offset(

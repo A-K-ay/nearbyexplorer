@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   FirebaseAuth _auth = FirebaseAuth.instance;
   getCurrentUser() {
-    print(_auth.currentUser);
     return _auth.currentUser != null ? true : false;
   }
 

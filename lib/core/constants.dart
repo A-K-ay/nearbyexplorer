@@ -38,15 +38,15 @@ const kInputDecoration = InputDecoration(
 
 class Constants {
   static String myName = "yama";
-  static const kCDarkestBlue = Color(0xff0e0401);
-  static const kCColorDarkBLue = Color(0xff942b0e);
-  static const kMediumBlue = Color(0xffeb5c34);
-  static const kCBlueGrey = Color(0xff6497b1);
-  static const kCLightBlue = Color(0xfff8f5f1);
-  // static const kCDarkestBlue = Color(0xff011f4b);
-  // static const kCColorDarkBLue = Color(0xff03396c);
-  // static const kMediumBlue = Color(0xff005b96);
+  // static const kCDarkestBlue = Color(0xff0e0401);
+  // static const kCColorDarkBLue = Color(0xff942b0e);
+  // static const kMediumBlue = Color(0xffeb5c34);
   // static const kCBlueGrey = Color(0xff6497b1);
-  // static const kCLightBlue = Color(0xfff0f8ff);
+  // static const kCLightBlue = Color(0xfff8f5f1);
+  static const kCDarkestBlue = Color(0xff011f4b);
+  static const kCColorDarkBLue = Color(0xff03396c);
+  static const kMediumBlue = Color(0xff005b96);
+  static const kCBlueGrey = Color(0xff6497b1);
+  static const kCLightBlue = Color(0xfff0f8ff);
   static bool isLocationdenied = false;
 }

@@ -257,7 +257,7 @@ class _MainScreenState extends State<MainScreen> {
                           : ListView.builder(
                               itemCount: restaurantList.length,
                               itemBuilder: (context, index) {
-                                return ImageCardFull(
+                                return ImageCardRow(
                                   restaurant: restaurantList[index],
                                 );
                               },

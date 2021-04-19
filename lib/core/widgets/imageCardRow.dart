@@ -30,11 +30,9 @@ class ImageCardRow extends StatelessWidget {
               borderRadius: BorderRadius.all(
                 Radius.circular(20),
               ),
-              child: Expanded(
-                child: Image.network(
-                  restaurant.imgurl,
-                  fit: BoxFit.cover,
-                ),
+              child: Image.network(
+                restaurant.imgurl,
+                fit: BoxFit.cover,
               ),
             ),
           ),
@@ -49,7 +47,7 @@ class ImageCardRow extends StatelessWidget {
               children: [
                 SizedBox(
                   width: getProportionateScreenWidth(160),
-                  height: getProportionateScreenHeight(24),
+                  height: 24,
                   child: Text(
                     restaurant.name,
                     overflow: TextOverflow.clip,
@@ -65,7 +63,7 @@ class ImageCardRow extends StatelessWidget {
                 ),
                 SizedBox(
                   width: getProportionateScreenWidth(160),
-                  height: getProportionateScreenHeight(38),
+                  height: 35,
                   child: Text(
                     restaurant.adress,
                     overflow: TextOverflow.clip,
